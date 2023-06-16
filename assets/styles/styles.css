@@ -1,0 +1,719 @@
+
+*{
+    margin: 0;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;   
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+nav{
+    background: #004155;
+    height: 80px;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin-right: 10px;
+    font-size: 5px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+
+.boxBcol1 {
+    display: flex;              /*Esto permite que los elementos hijos dentro de "boxB" se muestren en una columna vertical*/
+    flex-direction: column;     /*Ahora, la clase "InicioSesionT" aparecerá debajo de la clase "InicioSesion".*/
+    align-items: center;
+}
+
+.boxBcol2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 7px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+li a.active, li a:hover{
+    background: rgb(156, 210, 211);
+    transition: .2s;
+    padding: 20px 30px;
+}
+
+.btnIniciarS:hover{
+    background: rgb(0, 119, 153);
+    transition: .2s;
+    padding: 10px 20px;
+    font-weight: bold;
+    color:#fff
+}
+
+.btnBanner:hover{
+    background: rgb(0, 119, 153);
+    transition: .2s;
+    padding: 15px 30px;
+    font-weight: bold;
+    color:#fff
+}
+
+section.banner{ 
+    background-color: rgb(242,230,207);
+    padding: 3rem 0;
+}
+
+
+.boxBcol2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.boxBcol1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.containerB{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+    justify-content: space-between;
+}
+
+.btnBanner{
+    text-align: center;
+    background: linear-gradient(to right, rgb(17, 76, 95), rgb(255, 255, 255));
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btnIniciarS{
+    text-align: center;
+    background: linear-gradient(to right, rgb(17, 76, 95), rgb(255, 255, 255));
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.txtBanner{
+    color: #000000;
+    padding: 20px 20px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.InicioSesion{
+    font-size: 40px;
+    text-align: center;
+}
+
+.InicioSesionT{
+    text-align: start;
+}
+
+
+.boxB2col1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+    background-color: rgb(242,230,207);
+}
+
+
+.boxBcol2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    background-color: rgb(242,230,207);
+}
+
+.imgMach{
+    width: 20%;
+    background-color: rgb(242,230,207);
+}
+
+.Conocenos {
+    background-color: rgb(242,230,207);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.txtConocenos {
+    text-align: center;
+    font-size: 60px;
+}
+
+.imgMach{
+    width: 60%;
+}
+
+
+.boxB2col1, .boxB2col2, .boxB2col3 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .boxB2col1, .boxB2col2, .boxB2col3 {
+        flex-basis: 33.33%;
+    }
+}
+
+.imgLogo{
+    align-items: center;
+    width: 20%;
+}
+
+.Comunidad{
+    background: rgb(156,210,211);
+}
+
+.txtComunidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    font-size: 440%;
+    color: #000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    justify-content: center;
+}
+.unete{
+    margin-left: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.txtApp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    font-size: 440%;
+    color: #000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.listapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(242, 230, 207);
+    margin: 0 5px;
+  }
+  
+.sign{
+    padding: 20px 20px;
+    width: 290px;
+    transform: translateY(220px); 
+}
+  
+.ini{
+    padding: 20px 20px;
+    width: 300px;
+    transform: translateY(220px);
+}
+  
+.lug{
+    padding: 20px 20px;
+    width: 300px;
+    transform: translateY(220px);
+}
+
+
+.btnEnter {
+    background: #004155;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 1px;
+    color: #000000;
+}
+
+.btnEnter:hover{
+    background: rgb(0, 119, 153);
+    transition: .2s;
+    font-weight: bold;
+    color:#fff;
+}
+
+.Contactanos{
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.twitter{
+    width: 20px;
+    transform: translateY(-25px);
+}
+
+.facebook{
+    width: 20px;
+    transform: translateY(-25px);
+}
+
+.insta{
+    width: 20px;
+    transform: translateY(-25px);
+}
+
+.linked{
+    width: 20px;
+    transform: translateY(-25px);
+}
+
+.tiktok{
+    width: 20px;
+    transform: translateY(-25px);
+}
+
+.ContactTabla{
+    font-size: 16px; /* Tamaño de fuente por defecto */
+    width: 100%; /* Ancho máximo de la tabla */
+    table-layout:auto; /* Fijar el ancho de las columnas */
+    border-spacing: 20px;
+    color:#fff;
+    border-collapse: separate;
+}
+
+.btnEnter{
+    transform: translateX(-90px);
+}
+
+
+/*MODIFICAR*/
+.banner {
+    text-align: center;
+}
+
+.containerB {
+    display: flex;
+    justify-content: center;
+}
+
+.boxBcol1 {
+    padding: 20px;
+}
+
+.boxBcol2 {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.App{
+    padding-bottom: 30%;
+}
+
+.appIMG{
+    transform: translateY(45%);
+    width: 100%;
+    padding-bottom: 10%;
+    margin-bottom: auto;
+}
+
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    .ContactTabla {
+        border-collapse: collapse; 
+        font-size: 11px; 
+    }
+    
+    th, td {
+        padding: 5px; 
+    }
+
+    .txtRedes{
+        background: rgb(156,210,211);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 190%;
+    }
+
+    .twitter{
+        margin-top: 20px;
+    }
+
+    .btnEnter{
+        transform: translateX(-10px);
+    }
+
+    .imgBanner{
+        width: 70%;
+    }
+
+    .descargar{
+        width: 70%;
+    }
+
+    .App{
+        padding-bottom: 45%;
+    }
+
+    .wspIMG{
+        width: 160px;
+    }
+    
+    .tlgIMG{
+        width: 160px;
+    }
+    
+    .ytIMG{
+        width: 160px;
+        padding-bottom: 20%;
+    }
+
+    .Comunidad{
+        padding-bottom: 40%;
+    }
+
+    .unete{
+        padding-right: 30%;
+        transform: translateY(230px);
+        margin-left: 50px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+    .ContactTabla {
+        border-collapse: collapse; /* Eliminar la separación entre filas y columnas */
+        font-size: 11px; /* Reducción del tamaño de la fuente */
+    }
+    
+    th, td {
+        padding: 5px; /* Reducción del padding */
+    }
+
+    .twitter{
+        margin-top: 20px;
+    }
+
+    .btnEnter{
+        transform: translateX(-10px);
+    }
+
+    .imgBanner{
+        width: 70%;
+    }
+
+    .descargar{
+        width: 70%;
+    }
+
+    .App{
+        padding-bottom: 50%;
+    }
+
+
+
+    .txtRedes{
+        background: rgb(156,210,211);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 190%;
+    }
+    
+    .txtRedes ol li{
+        display: inline-block;
+        padding-inline: 80px;
+    } 
+
+    .bRedes{
+        background: rgb(156,210,211);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wspIMG{
+        width: 160px;
+    }
+    
+    .tlgIMG{
+        width: 160px;
+        transform: translateX(90px);
+    }
+    
+    .ytIMG{
+        width: 160px;
+        padding-bottom: 20%;
+    }
+
+    .Comunidad{
+        padding-bottom: 20%;
+    }
+
+    .unete{
+        padding-right: 90px;
+        transform: translateY(200px);
+
+    }
+
+    .btnEnter{
+        transform: translateX(-20px);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    .ContactTabla {
+        border-collapse: collapse; /* Eliminar la separación entre filas y columnas */
+        font-size: 16px; /* Reducción del tamaño de la fuente */
+    }
+    
+    th, td {
+        padding: 10px; /* Reducción del padding */
+    }
+
+    .twitter{
+        margin-top: 20px;
+    }
+
+    .btnEnter{
+        transform: translateX(-10px);
+    }
+
+    .imgBanner{
+        width: 50%;
+    }
+
+    .descargar{
+        width: 50%;
+    }
+
+    .App{
+        padding-bottom: 50%;
+    }
+
+
+
+
+    .txtRedes{
+        background: rgb(156,210,211);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 190%;
+    }
+    
+    .txtRedes ol li{
+        display: inline-block;
+        padding-inline: 80px;
+    } 
+
+    .wspIMG{
+        width: 160px;
+    }
+    
+    .tlgIMG{
+        width: 160px;
+    }
+    
+    .ytIMG{
+        width: 160px;
+        padding-bottom: 20%;
+    }
+
+    .Comunidad{
+        padding-bottom: 10%;
+    }
+
+    .unete{
+        transform: translateY(130px);
+    }
+
+    .btnEnter{
+        transform: translateX(-90px);
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+    .ContactTabla {
+        border-collapse: collapse; /* Eliminar la separación entre filas y columnas */
+        font-size: 16px; /* Reducción del tamaño de la fuente */
+    }
+    
+    th, td {
+        padding: 10px; /* Reducción del padding */
+    }
+
+    .twitter{
+        margin-top: 20px;
+    }
+
+    .btnEnter{
+        transform: translateX(-10px);
+    }
+
+    .imgBanner{
+        width: 50%;
+    }
+
+    .descargar{
+        width: 50%;
+    }
+
+    .App{
+        padding-bottom: 45%;
+    }
+
+
+
+    .txtRedes{
+        background: rgb(156,210,211);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 190%;
+    }
+    
+    .txtRedes ol li{
+        display: inline-block;
+        padding-inline: 80px;
+    } 
+    
+    .txtRedes ol li{
+        display: inline-block;
+        padding-inline: 80px;
+    } 
+
+    .wspIMG{
+        width: 160px;
+    }
+    
+    .tlgIMG{
+        width: 160px;
+    }
+    
+    .ytIMG{
+        width: 160px;
+        padding-bottom: 20%;
+    }
+
+    .Comunidad{
+        padding-bottom: 5%;
+    }
+
+    .unete{
+        padding-right: 120px;
+        transform: translateY(50px);
+    }
+
+    .btnEnter{
+        transform: translateX(-160px);
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 2000px) {
+    .ContactTabla {
+        border-collapse: collapse; /* Eliminar la separación entre filas y columnas */
+        font-size: 16px; /* Reducción del tamaño de la fuente */
+    }
+    
+    th, td {
+        padding: 10px; /* Reducción del padding */
+    }
+
+    .twitter{
+        margin-top: 20px;
+    }
+
+    .btnEnter{
+        transform: translateX(-10px);
+    }
+
+    .imgBanner{
+        width: 50%;
+    }
+
+    .descargar{
+        width: 50%;
+    }
+
+    .App{
+        padding-bottom: 40%;
+    }
+
+
+    .txtRedes{
+        background: rgb(156,210,211);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 190%;
+    }
+    
+    .txtRedes ol li{
+        display: inline-block;
+        padding-inline: 80px;
+    } 
+
+    .wspIMG{
+        width: 160px;
+    }
+    
+    .tlgIMG{
+        width: 160px;
+    }
+
+
+    .ytIMG{
+        width: 160px;
+        padding-bottom: 20%;
+    }
+
+    .unete{
+        transform: translateY(-50px);
+    }
+
+    .btnEnter{
+        transform: translateX(-170px);
+    }
+}
+
